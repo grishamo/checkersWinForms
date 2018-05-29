@@ -17,14 +17,19 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
             GameSettings gameSettings = new GameSettings();
             gameSettings.ShowDialog();
 
-            InitializeGameData(gameSettings);
             InitializeComponent();
+            InitializeGameData(gameSettings);
+            
         }
 
-        private void InitializeGameData(Form i_GameSettings)
+        private void InitializeGameData(GameSettings i_GameSettings)
         {
-            this.Player1Name.Text = "";
+            labelFirstPlayer.Text = i_GameSettings.FirstPlayerName;
+            labelSecondPlayer.Text = i_GameSettings.SecondPlayerName;
+
+            int boardSize = i_GameSettings.BoardSize;
         }
+
 
     }
 }

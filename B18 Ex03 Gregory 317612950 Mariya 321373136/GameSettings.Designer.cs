@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxBoardSize = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.Player1Name = new System.Windows.Forms.TextBox();
+            this.textBoxSecondPlayer = new System.Windows.Forms.TextBox();
+            this.checkBoxSecondPlayer = new System.Windows.Forms.CheckBox();
+            this.textBoxFirstPlayer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxBoardSize.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxBoardSize
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(27, 20);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(251, 65);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Board Size";
+            this.groupBoxBoardSize.Controls.Add(this.radioButton3);
+            this.groupBoxBoardSize.Controls.Add(this.radioButton2);
+            this.groupBoxBoardSize.Controls.Add(this.radioButton1);
+            this.groupBoxBoardSize.Location = new System.Drawing.Point(27, 20);
+            this.groupBoxBoardSize.Name = "groupBoxBoardSize";
+            this.groupBoxBoardSize.Size = new System.Drawing.Size(251, 65);
+            this.groupBoxBoardSize.TabIndex = 0;
+            this.groupBoxBoardSize.TabStop = false;
+            this.groupBoxBoardSize.Text = "Board Size";
             // 
             // radioButton3
             // 
@@ -89,9 +89,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Controls.Add(this.Player1Name);
+            this.groupBox2.Controls.Add(this.textBoxSecondPlayer);
+            this.groupBox2.Controls.Add(this.checkBoxSecondPlayer);
+            this.groupBox2.Controls.Add(this.textBoxFirstPlayer);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(27, 113);
             this.groupBox2.Name = "groupBox2";
@@ -100,31 +100,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Players:";
             // 
-            // textBox1
+            // textBoxSecondPlayer
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(87, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Computer";
+            this.textBoxSecondPlayer.Enabled = false;
+            this.textBoxSecondPlayer.Location = new System.Drawing.Point(87, 63);
+            this.textBoxSecondPlayer.Name = "textBoxSecondPlayer";
+            this.textBoxSecondPlayer.Size = new System.Drawing.Size(146, 20);
+            this.textBoxSecondPlayer.TabIndex = 4;
+            this.textBoxSecondPlayer.Text = "Computer";
             // 
-            // checkBox1
+            // checkBoxSecondPlayer
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(14, 68);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(67, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Player 2:";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxSecondPlayer.AutoSize = true;
+            this.checkBoxSecondPlayer.Location = new System.Drawing.Point(14, 68);
+            this.checkBoxSecondPlayer.Name = "checkBoxSecondPlayer";
+            this.checkBoxSecondPlayer.Size = new System.Drawing.Size(67, 17);
+            this.checkBoxSecondPlayer.TabIndex = 3;
+            this.checkBoxSecondPlayer.Text = "Player 2:";
+            this.checkBoxSecondPlayer.UseVisualStyleBackColor = true;
+            this.checkBoxSecondPlayer.CheckStateChanged += new System.EventHandler(this.checkBoxSecondPlayer_CheckStateChanged);
             // 
-            // Player1Name
+            // textBoxFirstPlayer
             // 
-            this.Player1Name.Location = new System.Drawing.Point(87, 31);
-            this.Player1Name.Name = "Player1Name";
-            this.Player1Name.Size = new System.Drawing.Size(146, 20);
-            this.Player1Name.TabIndex = 1;
+            this.textBoxFirstPlayer.Location = new System.Drawing.Point(87, 31);
+            this.textBoxFirstPlayer.Name = "textBoxFirstPlayer";
+            this.textBoxFirstPlayer.Size = new System.Drawing.Size(146, 20);
+            this.textBoxFirstPlayer.TabIndex = 1;
             // 
             // label1
             // 
@@ -152,13 +153,13 @@
             this.ClientSize = new System.Drawing.Size(304, 283);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxBoardSize);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "GameSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "GameSettings";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxBoardSize.ResumeLayout(false);
+            this.groupBoxBoardSize.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -167,14 +168,14 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxBoardSize;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox Player1Name;
+        private System.Windows.Forms.TextBox textBoxSecondPlayer;
+        private System.Windows.Forms.CheckBox checkBoxSecondPlayer;
+        private System.Windows.Forms.TextBox textBoxFirstPlayer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonStart;
     }

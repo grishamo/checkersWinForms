@@ -46,12 +46,19 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
             {
                 FirstPlayerName = textBoxFirstPlayer.Text;
                 SecondPlayerName = textBoxSecondPlayer.Text;
-                BoardSize = int.Parse(GetCheckedRadio(groupBoxBoardSize).Text[0].ToString());
+                BoardSize = getBoardSize(GetCheckedRadio(groupBoxBoardSize));
                 DialogResult = DialogResult.OK;
                 Close();
 
             }
 
+        }
+
+        private int getBoardSize(RadioButton i_radioButtonText)
+        {
+
+            string[] textArray = i_radioButtonText.Text.Split(' ');
+            return int.Parse(textArray[0]);
         }
 
         private RadioButton GetCheckedRadio(Control container)

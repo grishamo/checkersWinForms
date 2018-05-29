@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace B18_Ex03_Gregory_317612950_Mariya_321373136
+namespace B18_Ex05_Gregory_317612950_Mariya_321373136
 {
     public partial class GameSettings : Form
     {

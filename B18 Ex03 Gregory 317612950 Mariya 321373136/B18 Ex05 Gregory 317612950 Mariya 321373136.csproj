@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckerLogicalControl.cs" />
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +62,7 @@
     <Compile Include="Piece.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.resx">

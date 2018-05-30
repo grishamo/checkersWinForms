@@ -11,8 +11,8 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
 {
     public partial class Game : Form
     {
-        //Player m_FirstPlayer;
-        //Player m_SecondPlayer;
+        Player m_FirstPlayer;
+        Player m_SecondPlayer;
         Button[,] playBoard;
         Button m_SelectedBoardPiece = new Button();
         int m_BoardSize;
@@ -32,8 +32,8 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
             labelFirstPlayer.Text = i_GameSettings.FirstPlayerName;
             labelSecondPlayer.Text = i_GameSettings.SecondPlayerName;
             m_BoardSize = i_GameSettings.BoardSize;
-            //m_FirstPlayer = new Player(i_GameSettings.FirstPlayerName);
-            //m_SecondPlayer = new Player(i_GameSettings.SecondPlayerName);
+            m_FirstPlayer = new Player(i_GameSettings.FirstPlayerName, "X", "K");
+            m_SecondPlayer = new Player(i_GameSettings.SecondPlayerName, "O", "Q");
 
 
             drawGameBoard(i_GameSettings.BoardSize);

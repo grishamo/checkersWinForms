@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
-
+﻿
 namespace B18_Ex05_Gregory_317612950_Mariya_321373136
 {
 	class Player
@@ -11,16 +8,21 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
 		private int m_score;
 		private string m_Piece;
         private string m_Queen;
+        int m_PlayerId;
 
         ////Methods:
-        public Player(string i_PlayerName, string i_Piece, string i_QueenPiece)
+        public Player(int i_PlayerId, string i_PlayerName, string i_Piece, string i_QueenPiece)
 		{
+            m_PlayerId = i_PlayerId;
 			m_PlayerName = i_PlayerName;
-			m_Piece = i_Piece;
-            m_Queen = i_QueenPiece;
-
-            m_score = 0;
+            PieceValue = i_Piece;
+            QueenPieceValue = i_QueenPiece;
 		}
+
+        public int PlayerId
+        {
+            get { return m_PlayerId; }
+        }
 
 		public string Name
 		{
@@ -31,7 +33,7 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
 		public int Score
 		{
 			get { return m_score; }
-			set { m_score++; }
+			set { m_score = value; }
 		}
 
 		public string PieceValue
@@ -46,9 +48,9 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
             set { m_Queen = value; }
         }
 
-        public bool IsPlayerPiece(Button i_Piece)
+        public bool IsPlayerPiece(BoardPiece i_Piece)
         {
-            return i_Piece.Text.Equals(PieceValue) || i_Piece.Text.Equals(PieceValue);
+            return i_Piece.Text.Equals(PieceValue) || i_Piece.Text.Equals(QueenPieceValue);
         }
     }
 }

@@ -34,7 +34,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxSecondPlayer = new System.Windows.Forms.TextBox();
-            this.checkBoxSecondPlayer = new System.Windows.Forms.CheckBox();
+            this.CheckBoxSecondPlayer = new System.Windows.Forms.CheckBox();
             this.textBoxFirstPlayer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
@@ -90,7 +90,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBoxSecondPlayer);
-            this.groupBox2.Controls.Add(this.checkBoxSecondPlayer);
+            this.groupBox2.Controls.Add(this.CheckBoxSecondPlayer);
             this.groupBox2.Controls.Add(this.textBoxFirstPlayer);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(27, 113);
@@ -109,16 +109,16 @@
             this.textBoxSecondPlayer.TabIndex = 4;
             this.textBoxSecondPlayer.Text = "Computer";
             // 
-            // checkBoxSecondPlayer
+            // CheckBoxSecondPlayer
             // 
-            this.checkBoxSecondPlayer.AutoSize = true;
-            this.checkBoxSecondPlayer.Location = new System.Drawing.Point(14, 68);
-            this.checkBoxSecondPlayer.Name = "checkBoxSecondPlayer";
-            this.checkBoxSecondPlayer.Size = new System.Drawing.Size(67, 17);
-            this.checkBoxSecondPlayer.TabIndex = 3;
-            this.checkBoxSecondPlayer.Text = "Player 2:";
-            this.checkBoxSecondPlayer.UseVisualStyleBackColor = true;
-            this.checkBoxSecondPlayer.CheckStateChanged += new System.EventHandler(this.checkBoxSecondPlayer_CheckStateChanged);
+            this.CheckBoxSecondPlayer.AutoSize = true;
+            this.CheckBoxSecondPlayer.Location = new System.Drawing.Point(14, 68);
+            this.CheckBoxSecondPlayer.Name = "CheckBoxSecondPlayer";
+            this.CheckBoxSecondPlayer.Size = new System.Drawing.Size(67, 17);
+            this.CheckBoxSecondPlayer.TabIndex = 3;
+            this.CheckBoxSecondPlayer.Text = "Player 2:";
+            this.CheckBoxSecondPlayer.UseVisualStyleBackColor = true;
+            this.CheckBoxSecondPlayer.CheckStateChanged += new System.EventHandler(this.checkBoxSecondPlayer_CheckStateChanged);
             // 
             // textBoxFirstPlayer
             // 
@@ -158,6 +158,7 @@
             this.Name = "GameSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "GameSettings";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameSettings_FormClosed);
             this.groupBoxBoardSize.ResumeLayout(false);
             this.groupBoxBoardSize.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -174,7 +175,7 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBoxSecondPlayer;
-        private System.Windows.Forms.CheckBox checkBoxSecondPlayer;
+        private System.Windows.Forms.CheckBox CheckBoxSecondPlayer;
         private System.Windows.Forms.TextBox textBoxFirstPlayer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonStart;

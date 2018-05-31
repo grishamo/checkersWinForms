@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace B18_Ex05_Gregory_317612950_Mariya_321373136
@@ -19,6 +12,11 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
         public GameSettings()
         {
             InitializeComponent();
+        }
+
+        public bool IsVsComp
+        {
+            get { return !CheckBoxSecondPlayer.Checked; }
         }
 
         public string FirstPlayerName
@@ -102,6 +100,14 @@ namespace B18_Ex05_Gregory_317612950_Mariya_321373136
         {
             textBoxSecondPlayer.Enabled = true;
             textBoxSecondPlayer.Text = null;
+        }
+
+        private void GameSettings_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if((sender as Form).DialogResult == DialogResult.Cancel)
+            {
+                Application.Exit();
+            }
         }
     }
 }

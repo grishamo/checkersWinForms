@@ -32,22 +32,21 @@
             this.Player1Score = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelFirstPlayer = new System.Windows.Forms.Label();
-            this.Player1Name = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxFirstPlayer = new System.Windows.Forms.GroupBox();
+            this.groupBoxSecondPlayer = new System.Windows.Forms.GroupBox();
             this.labelSecondPlayer = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Player2Score = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.boardContainer = new System.Windows.Forms.Panel();
-            this.Player1Name.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxFirstPlayer.SuspendLayout();
+            this.groupBoxSecondPlayer.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 25);
+            this.label1.Location = new System.Drawing.Point(6, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
@@ -58,7 +57,7 @@
             // 
             this.Player1Score.AutoSize = true;
             this.Player1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1Score.Location = new System.Drawing.Point(218, 25);
+            this.Player1Score.Location = new System.Drawing.Point(49, 42);
             this.Player1Score.Name = "Player1Score";
             this.Player1Score.Size = new System.Drawing.Size(13, 13);
             this.Player1Score.TabIndex = 1;
@@ -79,45 +78,48 @@
             // 
             this.labelFirstPlayer.AutoSize = true;
             this.labelFirstPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirstPlayer.Location = new System.Drawing.Point(46, 25);
+            this.labelFirstPlayer.Location = new System.Drawing.Point(49, 25);
             this.labelFirstPlayer.Name = "labelFirstPlayer";
             this.labelFirstPlayer.Size = new System.Drawing.Size(13, 13);
             this.labelFirstPlayer.TabIndex = 3;
             this.labelFirstPlayer.Text = "0";
             // 
-            // Player1Name
+            // groupBoxFirstPlayer
             // 
-            this.Player1Name.Controls.Add(this.labelFirstPlayer);
-            this.Player1Name.Controls.Add(this.label4);
-            this.Player1Name.Controls.Add(this.Player1Score);
-            this.Player1Name.Controls.Add(this.label1);
-            this.Player1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1Name.Location = new System.Drawing.Point(17, 31);
-            this.Player1Name.Name = "Player1Name";
-            this.Player1Name.Size = new System.Drawing.Size(243, 53);
-            this.Player1Name.TabIndex = 8;
-            this.Player1Name.TabStop = false;
-            this.Player1Name.Text = "Player 1";
+            this.groupBoxFirstPlayer.Controls.Add(this.labelFirstPlayer);
+            this.groupBoxFirstPlayer.Controls.Add(this.label4);
+            this.groupBoxFirstPlayer.Controls.Add(this.Player1Score);
+            this.groupBoxFirstPlayer.Controls.Add(this.label1);
+            this.groupBoxFirstPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxFirstPlayer.Location = new System.Drawing.Point(15, 20);
+            this.groupBoxFirstPlayer.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBoxFirstPlayer.Name = "groupBoxFirstPlayer";
+            this.groupBoxFirstPlayer.Size = new System.Drawing.Size(139, 72);
+            this.groupBoxFirstPlayer.TabIndex = 8;
+            this.groupBoxFirstPlayer.TabStop = false;
+            this.groupBoxFirstPlayer.Text = "Player 1";
             // 
-            // groupBox1
+            // groupBoxSecondPlayer
             // 
-            this.groupBox1.Controls.Add(this.labelSecondPlayer);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(266, 31);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(243, 53);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Player 2";
+            this.groupBoxSecondPlayer.Controls.Add(this.labelSecondPlayer);
+            this.groupBoxSecondPlayer.Controls.Add(this.label3);
+            this.groupBoxSecondPlayer.Controls.Add(this.Player2Score);
+            this.groupBoxSecondPlayer.Controls.Add(this.label6);
+            this.groupBoxSecondPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxSecondPlayer.Location = new System.Drawing.Point(166, 20);
+            this.groupBoxSecondPlayer.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBoxSecondPlayer.Name = "groupBoxSecondPlayer";
+            this.groupBoxSecondPlayer.Padding = new System.Windows.Forms.Padding(0);
+            this.groupBoxSecondPlayer.Size = new System.Drawing.Size(139, 72);
+            this.groupBoxSecondPlayer.TabIndex = 9;
+            this.groupBoxSecondPlayer.TabStop = false;
+            this.groupBoxSecondPlayer.Text = "Player 2";
             // 
             // labelSecondPlayer
             // 
             this.labelSecondPlayer.AutoSize = true;
             this.labelSecondPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSecondPlayer.Location = new System.Drawing.Point(46, 25);
+            this.labelSecondPlayer.Location = new System.Drawing.Point(45, 22);
             this.labelSecondPlayer.Name = "labelSecondPlayer";
             this.labelSecondPlayer.Size = new System.Drawing.Size(13, 13);
             this.labelSecondPlayer.TabIndex = 3;
@@ -127,59 +129,52 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 25);
+            this.label3.Location = new System.Drawing.Point(3, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Name:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // Player2Score
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(218, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "0";
+            this.Player2Score.AutoSize = true;
+            this.Player2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2Score.Location = new System.Drawing.Point(46, 39);
+            this.Player2Score.Name = "Player2Score";
+            this.Player2Score.Size = new System.Drawing.Size(13, 13);
+            this.Player2Score.TabIndex = 1;
+            this.Player2Score.Text = "0";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(175, 25);
+            this.label6.Location = new System.Drawing.Point(3, 39);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "Score:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // boardContainer
-            // 
-            this.boardContainer.AutoSize = true;
-            this.boardContainer.Location = new System.Drawing.Point(50, 113);
-            this.boardContainer.Name = "boardContainer";
-            this.boardContainer.Size = new System.Drawing.Size(0, 0);
-            this.boardContainer.TabIndex = 10;
-            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(520, 514);
-            this.Controls.Add(this.boardContainer);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.Player1Name);
+            this.ClientSize = new System.Drawing.Size(377, 337);
+            this.Controls.Add(this.groupBoxSecondPlayer);
+            this.Controls.Add(this.groupBoxFirstPlayer);
+            this.MaximizeBox = false;
             this.Name = "Game";
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "Checkers";
-            this.Player1Name.ResumeLayout(false);
-            this.Player1Name.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxFirstPlayer.ResumeLayout(false);
+            this.groupBoxFirstPlayer.PerformLayout();
+            this.groupBoxSecondPlayer.ResumeLayout(false);
+            this.groupBoxSecondPlayer.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -188,13 +183,12 @@
         private System.Windows.Forms.Label Player1Score;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelFirstPlayer;
-        private System.Windows.Forms.GroupBox Player1Name;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxFirstPlayer;
+        private System.Windows.Forms.GroupBox groupBoxSecondPlayer;
         private System.Windows.Forms.Label labelSecondPlayer;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Player2Score;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel boardContainer;
     }
 }
 
